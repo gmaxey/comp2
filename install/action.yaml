@@ -10,4 +10,4 @@ runs:
   using: composite
   steps:
     - name: Install component
-      run: echo installing component version ${{ inputs.version }}
+      run: echo installing component "${{ github.repository }}" version "${{ inputs.version }}"
