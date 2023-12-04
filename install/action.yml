@@ -12,4 +12,4 @@ runs:
     - name: Install component
       uses: docker://golang:1.20.3-alpine3.17
       shell: sh
-      run: echo installing component "${{ github.repository }}" version "${{ inputs.version }}"
+      run: echo installing component "${{ cloudbees.scm.repository }}" version "${{ inputs.version }}"
