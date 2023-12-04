@@ -1,0 +1,13 @@
+apiVersion: automation.cloudbees.io/v1alpha1
+kind: action
+name: install component
+inputs:
+  version:  
+    description: component version or image tag
+    required: true
+outputs: 
+runs:
+  using: composite
+  steps:
+    - name: Install component
+      run: echo installing component version ${{ inputs.version }}
